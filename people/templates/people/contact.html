@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+{% load static %}
+{%  block content %}
+<html lang="en">
+<head>
+<title>Lake Trust Bank </title>
+<!-- for-mobile-apps -->
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="keywords" content="Bank Card Responsive web template, Bootstrap Web Templates, Flat Web Templates, Android Compatible web template, 
+Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, SonyEricsson, Motorola web design" />
+
+    <script>
+        addEventListener("load", function () {
+            setTimeout(hideURLbar, 0);
+        }, false);
+
+        function hideURLbar() {
+            window.scrollTo(0, 1);
+        }
+    </script>
+	
+	<!-- css files -->
+    <link href="{% static 'css/bootstrap.css' %}" rel='stylesheet' type='text/css' /><!-- bootstrap css -->
+    <link href="{% static 'css/style3.css' %}" rel='stylesheet' type='text/css' /><!-- custom css -->
+    <link href="{% static 'css/font-awesome.min.css' %}" rel="stylesheet"><!-- fontawesome css -->
+	<!-- //css files -->
+	
+	<!-- google fonts -->
+	<link href="//fonts.googleapis.com/css?family=Niramit:200,200i,300,300i,400,400i,500,500i,600,600i,700,700i&amp;subset=latin-ext,thai,vietnamese" rel="stylesheet">
+	<!-- //google fonts -->
+	
+</head>
+<body>
+
+<!-- header -->
+<header>
+	<div class="container">
+		<!-- nav -->
+		<nav class="py-3 d-lg-flex">
+			<div id="logo">
+				<h1> <a href="{% url 'main' %}"><span class="fa fa-university"></span> Lake Trust Bank </a></h1>
+			</div>
+			<label for="drop" class="toggle"><span class="fa fa-bars"></span></label>
+			<input type="checkbox" id="drop" />
+			<ul class="menu ml-auto mt-1">
+				<li class=""><a href="{% url 'main' %}">Home</a></li>
+				<li class=""><a href="{% url 'about' %}">About</a></li>
+				<li class=""><a href="{% url 'services' %}">Services</a></li>
+				<li class="active"><a href="{% url 'contact' %}">Contact</a></li>
+				<li class="last-grid"><a href="{% url 'login' %}">Login</a></li>
+			</ul>
+		</nav>
+		<!-- //nav -->
+	</div>
+</header>
+<!-- //header -->
+
+<!-- inner-banner -->
+<section class="inner-banner" id="home">
+	<div class="inner-layer">
+		<div class="container">
+		</div>
+	</div>
+</section>
+<!-- //inner-banner -->
+
+<!-- breadcrumb -->
+<div class="breadcrumb-w3pvt">
+	<div class="container">
+	<nav aria-label="breadcrumb">
+		<ol class="breadcrumb">
+			<li class="breadcrumb-item">
+				<a href="{% url 'main' %}">Home</a>
+			</li>
+			<li class="breadcrumb-item" aria-current="page">Contact</li>
+		</ol>
+	</nav>
+	</div>
+</div>
+<!-- //breadcrumb -->
+	
+<!-- contact -->
+<section class="contact py-5">
+	<div class="container py-lg-5">
+		<h2 class="heading mb-sm-5 mb-4">Get in <strong> touch with us </strong></h2>
+		<div class="row">
+			<div class="col-lg-4 col-md-6 contact-address">
+				<h4 class="mb-4 w3f_title">Contact Address</h4>
+				<ul class="list-w3">
+					<li class="d-flex"><span class="fa mt-1 mr-1 fa-map-marker"></span>2130 Fulton Street, San Diego, <br>CA 94117-1080 USA</li>
+					<li class="my-3"><span class="fa mr-1 fa-phone"></span>1-600-1234-567</li>
+					<li class="my-3"><span class="fa mr-1 fa-phone"></span>1-600-1234-567</li>
+					<li class=""><span class="fa mr-1 fa-envelope"></span>laketrustbankogn@gmail.com</li>
+				</ul>
+			</div>
+			<div class="col-lg-4 col-md-6 contact-form mt-md-0 mt-sm-5 mt-4">
+				<h4 class="mb-4 w3f_title">Contact Form</h4>
+				<form name="contactform" id="contactform" method="post" action="#" onsubmit="return(validate());" novalidate="novalidate">
+						<div class="form-group">
+						  <label>Name</label>
+						  <input type="text" class="form-control" id="name" placeholder="Enter Name" name="name">
+						</div>
+						<div class="form-group">
+						  <label>Email</label>
+						  <input type="email" class="form-control" id="name" placeholder="Enter Email" name="email">
+						</div>
+						<div class="form-group">
+						  <label>How can we help?</label>
+						  <textarea name="issues" class="form-control" id="iq" placeholder="Enter Your Message Here"></textarea>
+						</div>				
+						<button type="submit" onclick="alert('Request being processed please wait....')" class="btn btn-default">Submit</button>
+					</form>
+			</div>
+			<div class="col-lg-4 contact-map mt-lg-0 mt-sm-5 mt-4">
+				<h4 class="mb-4 w3f_title">Contact Map</h4>
+				<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3023.9503398796587!2d-73.9940307!3d40.719109700000004!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c25a27e2f24131%3A0x64ffc98d24069f02!2sCANADA!5e0!3m2!1sen!2sin!4v1441710758555" allowfullscreen=""></iframe>
+			</div>
+		</div>
+	</div>
+</section>
+<!-- //contact -->
+		
+<!-- footer -->
+<footer class="footer py-5">
+	<div class="container pt-lg-4">
+		<div class="row">
+			<div class="col-lg-3 col-sm-6 footer-top">
+				<h4 class="mb-4 w3f_title">Contact Info</h4>
+				<ul class="list-w3">
+					<li><span class="fa mr-1 fa-map-marker"></span>2130 Fulton Street, San Diego, CA 94117-1080 USA</li>
+					<li class="my-2"><span class="fa mr-1 fa-phone"></span>1-600-1234-567</li>
+					<li class="my-2"><span class="fa mr-1 fa-phone"></span>1-600-1234-567</li>
+					<li class=""><span class="fa mr-1 fa-envelope"></span>laketrustbankogn@gmail.com</li>
+				</ul>
+			</div>
+			
+			<div class="col-lg-2 col-sm-4 mt-lg-0 mt-sm-5 mt-4">
+				<h4 class="mb-4 w3f_title">Other Links</h4>
+				<ul class="list-w3">
+					<li class="my-2">
+						<a href="{% url 'card' %}">
+							Credit Cards
+						</a>
+					</li>
+					<li class="my-2">
+						<a href="{% url 'apply-loan' %}">
+							Loans
+						</a>
+					</li>
+				</ul>
+			</div>
+			
+		</div>
+	</div>
+	<!-- //footer bottom -->
+</footer>
+<!-- //footer -->
+
+<!-- middle -->
+<section class="middle py-4">
+	<div class="container">
+		<p><strong class="mr-2">Our Offerings & Calculators:</strong> Personal loans, Home and car loans, loan calculators, Savings accounts, Credit cards, Insurance.</p>
+		<p><strong class="mr-2">Bank Smart:</strong> Internet Banking, Online Banking, Cardless transactions, Fixed deposits, Pin generation, Card active status.</p>
+	</div>
+</section>
+<!-- //middle -->
+
+<!-- copyright -->
+<section class="copy-right py-4">
+	<div class="container">
+		<div class="row">
+			<div class="col-lg-7">
+				<p class="">Copyright &copy; otis Foundation 2011-2022
+				</p>
+			</div>
+			<div class="col-lg-5 mt-lg-0 mt-3">
+				<ul class="list-w3 d-sm-flex">
+					<li>
+						<a href="{% url 'terms' %}#Privicy Policy">
+							Privicy Policy
+						</a>
+					</li>
+					<li class="mx-sm-4 mx-3">
+						<a href="{% url 'terms' %}#Terms & Conditions">
+							Terms & Conditions
+						</a>
+					</li>
+					<li>
+						<a href="{% url 'terms' %}#Disclaimer">
+							Disclaimer.
+						</a>
+					</li>
+				</ul>
+			</div>
+		</div>
+	</div>
+</section>
+<!-- //copyright -->
+
+<!-- move top -->
+<div class="move-top text-right">
+	<a href="#home" class="move-top"> 
+		<span class="fa fa-angle-up  mb-3" aria-hidden="true"></span>
+	</a>
+</div>
+<!-- move top -->
+
+</body>
+{%  endblock content %}
+</html>

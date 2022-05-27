@@ -1,0 +1,380 @@
+<!DOCTYPE html>
+{% load static %}
+{%  block content %}
+<html lang="en">
+<head>
+<title>Lake Trust Bank </title>
+<!-- for-mobile-apps -->
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="keywords" content="Bank Card Responsive web template, Bootstrap Web Templates, Flat Web Templates, Android Compatible web template, 
+Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, SonyEricsson, Motorola web design" />
+
+    <script>
+        addEventListener("load", function () {
+            setTimeout(hideURLbar, 0);
+        }, false);
+
+        function hideURLbar() {
+            window.scrollTo(0, 1);
+        }
+    </script>
+	
+	<!-- css files -->
+    <link href="{% static 'css/bootstrap.css' %}" rel='stylesheet' type='text/css' /><!-- bootstrap css -->
+    <link href="{% static 'css/style3.css' %}" rel='stylesheet' type='text/css' /><!-- custom css -->
+    <link href="{% static 'css/font-awesome.min.css '%}" rel="stylesheet"><!-- fontawesome css -->
+	<!-- //css files -->
+	
+	<!-- google fonts -->
+	<link href="//fonts.googleapis.com/css?family=Niramit:200,200i,300,300i,400,400i,500,500i,600,600i,700,700i&amp;subset=latin-ext,thai,vietnamese" rel="stylesheet">
+	<!-- //google fonts -->
+	
+</head>
+<body>
+<!-- header -->
+<header>
+	<div class="container">
+		<!-- nav -->
+		<nav class="py-3 d-lg-flex">
+			<div id="logo">
+				<h1> <a href="{% url 'main' %}"><span class="fa fa-university"></span> Lake Trust Bank </a></h1>
+			</div>
+			<label for="drop" class="toggle"><span class="fa fa-bars"></span></label>
+			<input type="checkbox" id="drop" />
+			<ul class="menu ml-auto mt-1">
+				<li class="active"><a href="{% url 'main' %}">Home</a></li>
+				<li class=""><a href="{% url 'about' %}">About</a></li>
+				<li class=""><a href="{% url 'services' %}">Services</a></li>
+				<li class=""><a href="{% url 'contact' %}">Contact</a></li>
+				<li class="last-grid"><a href="{% url 'login' %}">Login</a></li>
+			</ul>-
+		</nav>
+		<!-- //nav -->
+	</div>
+</header>
+<!-- //header -->
+
+<!-- inner-banner -->
+<section class="inner-banner" id="home">
+	<div class="inner-layer">
+		<div class="container">
+		</div>
+	</div>
+</section>
+<!-- //inner-banner -->
+
+<!-- breadcrumb -->
+<div class="breadcrumb-w3pvt">
+	<div class="container">
+	<nav aria-label="breadcrumb">
+		<ol class="breadcrumb">
+			<li class="breadcrumb-item">
+				<a href="{% url 'main' %}">Home</a>
+			</li>
+			<li class="breadcrumb-item" aria-current="page">About Us</li>
+		</ol>
+	</nav>
+	</div>
+</div>
+<!-- //breadcrumb -->
+
+<!-- advantages and details -->
+<section class="advantages pt-5">
+	<div class="container pb-lg-5">
+		<div class="row advantages_grids">
+			<div class="col-lg-6">
+				<img src="{% static 'img/advantages.png' %}" alt="" class="img-fluid">
+			</div>
+			<div class="col-lg-6 mt-lg-0 mt-4">
+				<h3 class="mt-3">History Of Lake Trust Bank</h3>
+				<p class="my-sm-4 my-3">  Lake Trust Bank was founded and incorporated by Elizabeth lisa, as a private limited liability company in may 2011 and commenced
+				operation in july of the same year a commercial bank. From its humble beginnings of a single branch started off with
+				 $4 million, Lake Trust Bank is now one of the largest abnk that is used.</p>
+			</div>
+	<div class="container">
+		<div class="row bottom_grids text-center mt-lg-5 mt-sm-3">
+			<div class="col-md-4 grid1 mb-5">
+				<img src="{% static 'img/a1.png' %}" alt="" class="img-fluid">
+				<h3 class="my-3">Statistics</h3>
+				<p class=""> The efficiency of processing financial transactions is enhanced and well-run.  </p>
+			</div>
+			<div class="col-md-4 grid2 mb-5">
+				<img src="{% static 'img/a2.png' %}" alt="" class="img-fluid">
+				<h3 class="my-3">Security</h3>
+				<p class=""> High integrated security systems that include access control and surevillance.</p>
+			</div>
+			<div class="col-md-4 grid3 mb-5">
+				<img src="{% static 'img/a3.png' %}" alt="" class="img-fluid">
+				<h3 class="my-3">Presentation</h3>
+				<p class=""> Organize the slides create the text as well as add the visual element.</p>
+			</div>
+		</div>
+	</div>
+		</div>
+	</div>
+</section>
+<!-- //advantages and details -->
+
+<!-- testimonials -->
+<section class="clients">
+	<div class="layer pt-5">
+		<div class="container py-lg-5">
+			<h2 class="heading mb-sm-5 mb-4">Our <strong> customers feedback</strong></h2>
+			<div class="row pb-5">
+				<div class="col-lg-4 col-md-6 pl-sm-0 mb-3">
+					<div class="col- client-grid">
+						<div class="c-left">
+							<img src="{% static 'img/file1.png' %}" alt="image" class="img-fluid" />
+							<div class="info">
+								<h6>Johnson</h6>
+								<p>- Customer</p>
+							</div>
+							<div class="clearfix"></div>
+						</div>
+							<p class="mt-2">Lake trust bank is everything a bank should be.They are professional,kind,<br>and local.I appreciate all the staff and look forward to many years banking with Lake trust bank</p>
+					</div>
+				</div>
+				<div class="col-lg-4 col-md-6 pl-sm-0 mb-3">
+					<div class="col- client-grid">
+						<div class="c-left">
+							<img src="{% static 'img/file4.png' %}" alt="image" class="img-fluid" />
+							<div class="info">
+								<h6>Christiana</h6>
+								<p>- Customer</p>
+							</div>
+							<div class="clearfix"></div>
+						</div>
+							
+							<p class="mt-2">Have always had nothing but excellent sevice in a comfortable and pleasant atmosphere in the six years i have been banking with Lake trust bank
+					</div>
+				</div>
+				<div class="col-lg-4 col-md-6 pl-sm-0 mb-3">
+					<div class="col- client-grid">
+						<div class="c-left">
+							<img src="{% static 'img/file3.png' %}" alt="image" class="img-fluid" />
+							<div class="info">
+								<h6>Anthony </h6>
+								<p>- Customer</p>
+							</div>
+							<div class="clearfix"></div>
+						</div>
+						<p class="mt-2">Excellent and speedy customer service.i think their supervisor must observe them frequently.</p>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</section>
+<!-- //testimonials -->
+
+<!-- directors -->
+<section class="team pt-5">
+	<div class="container py-lg-5">
+		<h3 class="heading mb-lg-5 mb-4">Board <strong> of Directors</strong></h3>
+		<div class="row">
+			<div class="col-lg-4">
+				<div class="blog-info">
+					<h4 class="heading mt-lg-2">Governing Directors Of Lake Trust Bank.</h4>
+					<p class="mt-3">These are the governing body of a company, elected by shareholders in the case of public
+					companies to set strategy and oversee management.</p>
+				</div>
+			</div>
+			<div class="col-lg-8 text-center mt-lg-0 mt-5">
+				<div class="row">
+				   <div class="col-md-4 col-6 item mb-4">
+					  <div class="clients-color">
+						 <div class="w3-w3pvt-team-img">
+							<img src="{% static 'img/file2.png ' %}" class="" alt="">
+						 </div>
+						 <div class="team-txt-info pt-3">
+							<h4>Elizabeth lisa</h4>
+							<p class="mb-3">Managing Director.</p>
+						 </div>
+					  </div>
+				   </div>
+				   <div class="col-md-4 col-6 item mb-4">
+					  <div class="clients-color">
+						 <div class="w3-w3pvt-team-img">
+							<img src="{% static 'img/team2.jpg ' %}" class="" alt="">
+						 </div>
+						 <div class="team-txt-info pt-3">
+							<h4>Michael adam</h4>
+							<p class="mb-3">Chief executive officer.</p>
+							
+						 </div>
+					  </div>
+				   </div>
+				   <div class="col-md-4 col-6 item mb-4">
+					  <div class="clients-color">
+						 <div class="w3-w3pvt-team-img">
+							<img src="{% static 'img/file6.png ' %}" class="" alt="">
+						 </div>
+						 <div class="team-txt-info pt-3">
+							<h4>Watson smith</h4>
+							<p class="mb-3">Bank manager.</p>
+						 </div>
+					  </div>
+				   </div>
+				   <div class="col-md-4 col-6 item mb-4">
+					  <div class="clients-color">
+						 <div class="w3-w3pvt-team-img">
+							<img src="{% static 'img/team4.jpg ' %}" class="" alt="">
+						 </div>
+						 <div class="team-txt-info pt-3">
+							<h4>Mariza edisa</h4>
+							<p class="mb-3">Director.</p>
+						 </div>
+					  </div>
+				   </div>
+				   <div class="col-md-4 col-6 item mb-4">
+					  <div class="clients-color">
+						 <div class="w3-w3pvt-team-img">
+							<img src="{% static 'img/team5.jpg ' %}" class="" alt="">
+						 </div>
+						 <div class="team-txt-info pt-3">
+							<h4>John thomson</h4>
+							<p class="mb-3">Director.</p>
+						 </div>
+					  </div>
+				   </div>
+				</div>
+			</div>
+		</div>
+	</div>
+</section>
+<!-- //directors -->
+
+<!-- subscribe -->
+<div class="subscribe py-5">
+	<div class="container py-sm-4">
+		<h3 class="heading mb-md-5 mb-4">subscribe for <strong> news and updates</strong></h3>
+		<div class="row">
+			<div class="col-lg-6 w3-w3pvt-subscribe">
+				<form action="#" method="post">
+					<input type="email" name="email" placeholder="Enter your email here" required="">
+					<button class="btn1"><span class="fa fa-paper-plane" aria-hidden="true"></span></button>
+				</form>
+				<p>We'll never share your email with anyone else.</p>
+			</div>
+			<div class="col-lg-6 mt-lg-0 mt-4">
+				<h4>Sign up for our Newsletter, and get the latest banking & financial related news and updates.</h4>
+			</div>
+		</div>
+	</div>
+</div>
+<!-- //subscribe -->
+
+<!-- footer-top -->
+<section class="footer-top pt-5">
+	<div class="container">
+		<div class="row">
+			<div class="col-lg-3 col-sm-6 mb-4">
+				<h3 class="my-sm-3 mb-2"><span class="fa mr-2 fa-mobile"></span> Mobile Apps</h3>
+				<p class="mb-sm-4"> Mobile applications frequently serve to provide users with similar to those accessed on PCs.</p>
+			</div>
+			<div class="col-lg-3 col-sm-6 mb-4">
+				<h3 class="my-sm-3 mb-2"><span class="fa mr-2 fa-shield"></span> Security Tips</h3>
+				<p class="mb-sm-4"> Always log out after finishing an online banking session .</p>
+			</div>
+			<div class="col-lg-3 col-sm-6 mb-4">
+				<h3 class="my-sm-3 mb-2"><span class="fa mr-2 fa-globe"></span> Various Branches</h3>
+				<p class="mb-sm-4"> Our branches are all over the world Europe Asia and America  </p>
+			</div>
+			<div class="col-lg-3 col-sm-6 mb-4">
+				<h3 class="my-sm-3 mb-2"><span class="fa mr-2 fa-phone"></span> 24/7 Support</h3>
+				<p class="mb-4"> We work on 24 hour routing and help customer with problems .</p>
+			</div>
+		</div>
+	</div>
+</section>
+<!-- //footer-top -->
+
+<!-- footer -->
+<footer class="footer py-5">
+	<div class="container pt-lg-4">
+		<div class="row">
+			<div class="col-lg-3 col-sm-6 footer-top">
+				<h4 class="mb-4 w3f_title">Contact Info</h4>
+				<ul class="list-w3">
+					<li><span class="fa mr-1 fa-map-marker"></span>2130 Fulton Street, San Diego, CA 94117-1080 USA</li>
+					<li class="my-2"><span class="fa mr-1 fa-phone"></span>1-600-1234-567</li>
+					<li class="my-2"><span class="fa mr-1 fa-phone"></span>1-600-1234-567</li>
+					<li class=""><span class="fa mr-1 fa-envelope"></span>laketrustbankogn@gmail.com</li>
+				</ul>
+			</div>
+
+			<div class="col-lg-2 col-sm-4 mt-lg-0 mt-sm-5 mt-4">
+				<h4 class="mb-4 w3f_title">Other Links</h4>
+				<ul class="list-w3">
+					<li class="my-2">
+						<a href="{% url 'card' %}">
+							Credit Cards
+						</a>
+					</li>
+					<li class="my-2">
+						<a href="{% url 'apply-loan' %}">
+							Loans
+						</a>
+					</li>
+				</ul>
+			</div>
+			
+		</div>
+	</div>
+	<!-- //footer bottom -->
+</footer>
+<!-- //footer -->
+
+<!-- middle -->
+<section class="middle py-4">
+	<div class="container">
+		<p><strong class="mr-2">Our Offerings & Calculators:</strong> Personal loans, Home and car loans, loan calculators, Savings accounts, Credit cards, Insurance.</p>
+		<p><strong class="mr-2">Bank Smart:</strong> Internet Banking, Online Banking, Cardless transactions, Fixed deposits, Pin generation, Card active status.</p>
+	</div>
+</section>
+<!-- //middle -->
+
+<!-- copyright -->
+<section class="copy-right py-4">
+	<div class="container">
+		<div class="row">
+			<div class="col-lg-7">
+				<p class="">Copyright &copy; otis Foundation 2011-2022
+				</p>
+			</div>
+			<div class="col-lg-5 mt-lg-0 mt-3">
+				<ul class="list-w3 d-sm-flex">
+					<li>
+						<a href="{% url 'terms' %}#Privicy Policy">
+							Privicy Policy
+						</a>
+					</li>
+					<li class="mx-sm-4 mx-3">
+						<a href="{% url 'terms' %}#Terms & Conditions">
+							Terms & Conditions
+						</a>
+					</li>
+					<li>
+						<a href="{% url 'terms' %}#Disclaimer">
+							Disclaimer.
+						</a>
+					</li>
+				</ul>
+			</div>
+		</div>
+	</div>
+</section>
+<!-- //copyright -->
+
+<!-- move top -->
+<div class="move-top text-right">
+	<a href="#home" class="move-top"> 
+		<span class="fa fa-angle-up  mb-3" aria-hidden="true"></span>
+	</a>
+</div>
+<!-- move top -->
+
+</body>
+{%  endblock content %}
+</html>
